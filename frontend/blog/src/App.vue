@@ -1,23 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+   <Main></Main>
   </div>
 </template>
 
 <script>
+import Main from './views/main/main'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{Main}
 }
 </script>
 
 <style>
+body{
+  margin: 0px;
+  padding: 0px;
+  background: #f6f6f6;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  
 }
 </style>
