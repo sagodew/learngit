@@ -16,9 +16,6 @@ export default {
 body{
   margin: 0px;
   padding: 0px;
-  background: #f6f6f6;
-}
-#app {
-  
+  background:#E6E6FA;
 }
 </style>

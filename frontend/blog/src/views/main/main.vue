@@ -1,12 +1,18 @@
 <!--主页面 -->
 <template>
-    <div>
+  <div>
+    <div id="header">
       <Header></Header>
     </div>
+    <div id="content">
+      <BlogContent></BlogContent>
+    </div> 
+  </div>  
   </template>
   
   <script>
-  import Header from '../../components/Header.vue'
+  import Header from '@/components/Header.vue'
+  import BlogContent from '@/components/BlogContent.vue'
   export default {
     name: 'main',
     data () {
@@ -14,7 +20,7 @@
       };
     },
   
-    components: {Header},
+    components: {Header,BlogContent},
   
     computed: {},
   
@@ -24,5 +30,11 @@
   }
   
   </script>
-  <style scoped>
+  <style lang="scss" scoped>
+      #content{
+        margin-top:30px;
+        margin-left: 315px;
+        width: 550px;
+        background-color: #fff;
+      }
   </style>
