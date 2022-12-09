@@ -34,7 +34,6 @@
       #content{
         margin-top:30px;
         margin-left: 315px;
-        width: 550px;
-        background-color: #fff;
+        width: 1000px;
       }
   </style>
