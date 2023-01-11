@@ -1,9 +1,12 @@
 <!-- 博客展示页面 -->
 <template>
-  <div></div>
+  <div>
+    <BlogContent></BlogContent>
+  </div>
 </template>
 
 <script>
+import BlogContent from '@/components/BlogContent.vue'
 export default {
   name: 'BlogList',
   data () {
@@ -11,7 +14,7 @@ export default {
     };
   },
 
-  components: {},
+  components: {BlogContent},
 
   computed: {},
 

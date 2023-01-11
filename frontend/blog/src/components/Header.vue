@@ -3,19 +3,19 @@
   <div id="header">
         <div id="nav">
             <div id="log">
-                <img src="../assets/image/logo/logo.png" height="75%" width="75%"/>
+                <img src="@/assets/image/logo/logo.png" height="75%" width="75%"/>
             </div>
             <div id="navMeau">
                 <ul id="navbar">
-                    <li>博客</li>
-                    <li>随笔</li>
-                    <li>分享</li>
-                    <li>标签</li>
+                    <li @click="$router.push({path:'/blog'})">博客</li>
+                    <li @click="$router.push({path:'/essay'})">随笔</li>
+                    <li @click="$router.push({path:'/share'})">分享</li>
+                    <li @click="$router.push({path:'/tag'})">标签</li>
                 </ul>
             </div>
             <div id="blog_button">
-              <button class="login button">登录</button>
-              <button class="register button">注册</button>
+              <button class="login button"><a href>登录</a></button>
+              <button class="register button"><a href>注册</a></button>
             </div>
             <div id="search">
               <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
@@ -88,14 +88,29 @@ export default {
   height: 30px;
   width: 70px;
 }
+.button a{
+  text-decoration: none;
+}
 .login{
   border-style: none;
+}
+.login a{
+  color:black;
 }
 .register{
   border-style: none;
   border-radius:6%;
   background-color: #03a9f4;
+}
+.register a{
   color: #fff;
+}
+.login:hover{
+  border: 1px solid #ccc;
+  border-radius:6%;
+}
+.register:hover{
+  background-color: #17b2f9;
 }
 .search-btn{
   border-style: none;

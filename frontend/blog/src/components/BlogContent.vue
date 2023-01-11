@@ -57,13 +57,40 @@
                 </div>
               </div>
           </li>
+          <li class="content">
+              <div class="content_box">
+                <div class="content_img">
+                    <a href=""><img src="../assets/image/blog/1.jpg" width="240px" height="133px"/></a>
+                </div>
+                <div class="content_text">
+                    <h3 class="title"><a href="">标题</a></h3>
+                    <div class="item_text">内容内容内容1111111111111111111</div>
+                    <div class="item_info">
+                      <ul>
+                        <li class="author">
+                            <div class="avatar">
+                              <img src="../assets/image/blog/1670574073029.jpg" width="20px" height="20px" />
+                              <a href="" >author</a>
+                            </div>
+                        </li>
+                        <li class="ico-cat">
+                            <span>随笔</span>
+                        </li>
+                        <li class="ico-time"><i class="icon-clock icon"></i>13天前</li>
+                        <li class="ico-eye"><i class="icon-book-open icon"></i>1</li>
+                        <li class="ico-like"><i class="icon-bubble icon"></i>0</li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+          </li>
       </ul>
     </div>
     <div id="blog_page">
       <ul class="pagination">
-        <li class="disable"><i class="left">&lt;</i></li>
-        <li class="active"><i>1</i></li>
-        <li class="disable"><i class="right">&gt;</i></li>
+        <li class="disable"><i class="fa fa-angle-left pagin"></i></li>
+        <li class="active"><span class="pagin">1</span></li>
+        <li class="disable"><i class="fa fa-angle-right pagin"></i></li>
       </ul>
     </div>
   </div>
@@ -154,6 +181,7 @@ export default {
  }
 
  .pagination{
+  overflow:hidden;
   margin-left:450px;
  }
 
@@ -165,7 +193,14 @@ export default {
   width: 30px;
   height: 30px;
  }
- .pagination li i{
-
+ .pagin{
+  float: left;
+  margin-left:12px;
+  margin-top:7px;
+  color: #777;
+ }
+ .pagination li span{
+  margin-left:10px;
+  margin-top:5px;
  }
 </style>

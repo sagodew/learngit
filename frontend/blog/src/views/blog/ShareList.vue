@@ -1,9 +1,10 @@
 <!--分享展示 -->
 <template>
-  <div></div>
+  <div><BlogContent></BlogContent></div>
 </template>
 
 <script>
+import BlogContent from '@/components/BlogContent.vue'
 export default {
   name: 'ShareList',
   data () {
@@ -11,7 +12,7 @@ export default {
     };
   },
 
-  components: {},
+  components: {BlogContent},
 
   computed: {},
 

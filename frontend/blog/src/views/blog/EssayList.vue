@@ -1,9 +1,10 @@
 <!-- 随笔展示 -->
 <template>
-  <div></div>
+  <BlogContent></BlogContent>
 </template>
 
 <script>
+import BlogContent from '@/components/BlogContent.vue'
 export default {
   name: 'EssayList',
   data () {
@@ -11,7 +12,7 @@ export default {
     };
   },
 
-  components: {},
+  components: {BlogContent},
 
   computed: {},
 
